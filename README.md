@@ -62,7 +62,6 @@ type: 設定變量
 觸發邏輯 Trigger
 position("LINK-PERP")  <= get_variable("target_size")  and 
 balance("LINK") <= get_variable("target_size")  and
-abs(balance("LINK") - position("LINK-PERP")) < (get_variable("batch_size")*0.3) and
 bid_price("LINK-PERP") / offer_price("LINK/USD") > get_variable("spread_on_open") 
 ```
 
@@ -84,7 +83,7 @@ type : 下自定義訂單
 如果已經有一個委託存在 : 取消並下新訂單
 [V] Cancel order if rule is no longer triggered
 ```
-![image](https://user-images.githubusercontent.com/102121/115504504-a7e6e880-a2aa-11eb-9928-42ef54108508.png)
+![image](https://user-images.githubusercontent.com/102121/115508390-d3200680-a2af-11eb-8901-ce9bd0bdd040.png)
 ![image](https://user-images.githubusercontent.com/102121/115503996-db754300-a2a9-11eb-8535-ca995c3b5ede.png)
 
 
